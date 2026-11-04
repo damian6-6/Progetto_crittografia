@@ -16,5 +16,32 @@ namespace Progetto_crittografia
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_conferma_Click(object sender, EventArgs e)
+        {
+            string stringa = txt_stringa.Text;
+            int chiave = Convert.ToInt32( txt_chiave.Text);
+
+            if (string.IsNullOrEmpty(stringa))
+            {
+                MessageBox.Show("inserisci una stringa e numero di chiave valido");
+            }
+            else
+            {
+                for (int i = 0; i < stringa.Length; i++) 
+                {
+
+
+
+
+                }
+
+
+        }
     }
 }
