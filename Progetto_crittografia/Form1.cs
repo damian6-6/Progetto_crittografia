@@ -25,7 +25,7 @@ namespace Progetto_crittografia
         private void btn_conferma_Click(object sender, EventArgs e)
         {
             string stringa = txt_stringa.Text;
-            int chiave = Convert.ToInt32( txt_chiave.Text);
+            int chiave = Convert.ToInt32(txt_chiave.Text);
 
             if (string.IsNullOrEmpty(stringa))
             {
@@ -33,15 +33,60 @@ namespace Progetto_crittografia
             }
             else
             {
-                for (int i = 0; i < stringa.Length; i++) 
+                char[] risultato = stringa.ToCharArray();
+                for (int i = 0; i < stringa.Length; i++)
                 {
-
-
+                    char c = risultato[i]; 
+                    if (c >= 'A' && c <= 'Z')
+                    {
+                        risultato[i] = (char)('A' + (c - 'A' + chiave + 26) % 26);
+                    }
+                    else if (c >= 'a' && c <= 'z')
+                    {
+                        risultato[i] = (char)('a' + (c - 'a' + chiave + 26) % 26);
+                    }
+                    lbl_n3.Text = new string(risultato);
 
 
                 }
 
 
+            }
+        }
+
+        private void btn_conferma2_Click(object sender, EventArgs e)
+        {
+            string stringa = txt_codice.Text;
+            int chiave = Convert.ToInt32(txt_chiave2.Text);
+
+            if (string.IsNullOrEmpty(stringa))
+            {
+                MessageBox.Show("inserisci una stringa e numero di chiave valido");
+            }
+            else
+            {
+                char[] risultato = stringa.ToCharArray();
+                for (int i = 0; i < stringa.Length; i++)
+                {
+                    char c = risultato[i];
+                    if (c >= 'A' && c <= 'Z')
+                    {
+                        risultato[i] = (char)('A' + (c - 'A'-chiave + 26) % 26);
+                    }
+                    
+            else if (c >= 'a' && c <= 'z')
+                    {
+                        risultato[i] = (char)('a' + (c - 'a' - chiave + 26) % 26);
+                    }
+                    lbl_n6.Text = new string(risultato);
+
+
+                }
+
+
+            }
         }
     }
-}
+    }
+
+
