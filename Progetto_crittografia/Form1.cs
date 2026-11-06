@@ -25,7 +25,7 @@ namespace Progetto_crittografia
         private void btn_conferma_Click(object sender, EventArgs e)
         {
             string stringa = txt_stringa.Text;
-            int chiave = Convert.ToInt32(txt_chiave.Text);
+            int chiave = Convert.ToInt32(txt_chiave.Text) %26;
 
             if (string.IsNullOrEmpty(stringa))
             {
@@ -57,7 +57,7 @@ namespace Progetto_crittografia
         private void btn_conferma2_Click(object sender, EventArgs e)
         {
             string stringa = txt_codice.Text;
-            int chiave = Convert.ToInt32(txt_chiave2.Text);
+            int chiave = Convert.ToInt32(txt_chiave2.Text) %26;
 
             if (string.IsNullOrEmpty(stringa))
             {
