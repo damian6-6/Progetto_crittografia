@@ -42,6 +42,12 @@
             this.btn_conferma2 = new System.Windows.Forms.Button();
             this.lbl_n6 = new System.Windows.Forms.Label();
             this.lbl_titolo = new System.Windows.Forms.Label();
+            this.lbl_n7 = new System.Windows.Forms.Label();
+            this.txt_stringa2 = new System.Windows.Forms.TextBox();
+            this.lbl_n8 = new System.Windows.Forms.Label();
+            this.txt_chiave3 = new System.Windows.Forms.TextBox();
+            this.btn_conferma3 = new System.Windows.Forms.Button();
+            this.lbl_n9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_n1
@@ -125,7 +131,7 @@
             this.lbl_n4.AutoSize = true;
             this.lbl_n4.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_n4.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lbl_n4.Location = new System.Drawing.Point(456, 103);
+            this.lbl_n4.Location = new System.Drawing.Point(259, 103);
             this.lbl_n4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_n4.Name = "lbl_n4";
             this.lbl_n4.Size = new System.Drawing.Size(163, 19);
@@ -135,7 +141,7 @@
             // txt_codice
             // 
             this.txt_codice.BackColor = System.Drawing.Color.LightGray;
-            this.txt_codice.Location = new System.Drawing.Point(460, 125);
+            this.txt_codice.Location = new System.Drawing.Point(263, 125);
             this.txt_codice.Margin = new System.Windows.Forms.Padding(2);
             this.txt_codice.Name = "txt_codice";
             this.txt_codice.Size = new System.Drawing.Size(129, 20);
@@ -146,7 +152,7 @@
             this.lbl_n5.AutoSize = true;
             this.lbl_n5.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_n5.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lbl_n5.Location = new System.Drawing.Point(456, 154);
+            this.lbl_n5.Location = new System.Drawing.Point(259, 154);
             this.lbl_n5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_n5.Name = "lbl_n5";
             this.lbl_n5.Size = new System.Drawing.Size(62, 19);
@@ -156,7 +162,7 @@
             // txt_chiave2
             // 
             this.txt_chiave2.BackColor = System.Drawing.Color.LightGray;
-            this.txt_chiave2.Location = new System.Drawing.Point(460, 175);
+            this.txt_chiave2.Location = new System.Drawing.Point(263, 175);
             this.txt_chiave2.Margin = new System.Windows.Forms.Padding(2);
             this.txt_chiave2.Name = "txt_chiave2";
             this.txt_chiave2.Size = new System.Drawing.Size(86, 20);
@@ -166,7 +172,7 @@
             // 
             this.btn_conferma2.BackColor = System.Drawing.Color.GreenYellow;
             this.btn_conferma2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_conferma2.Location = new System.Drawing.Point(460, 209);
+            this.btn_conferma2.Location = new System.Drawing.Point(263, 209);
             this.btn_conferma2.Margin = new System.Windows.Forms.Padding(2);
             this.btn_conferma2.Name = "btn_conferma2";
             this.btn_conferma2.Size = new System.Drawing.Size(106, 26);
@@ -179,7 +185,7 @@
             // 
             this.lbl_n6.AutoSize = true;
             this.lbl_n6.Font = new System.Drawing.Font("MS UI Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_n6.Location = new System.Drawing.Point(469, 247);
+            this.lbl_n6.Location = new System.Drawing.Point(260, 247);
             this.lbl_n6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_n6.Name = "lbl_n6";
             this.lbl_n6.Size = new System.Drawing.Size(77, 14);
@@ -198,12 +204,83 @@
             this.lbl_titolo.TabIndex = 13;
             this.lbl_titolo.Text = "CIFRARIO";
             // 
+            // lbl_n7
+            // 
+            this.lbl_n7.AutoSize = true;
+            this.lbl_n7.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_n7.ForeColor = System.Drawing.Color.DarkOrange;
+            this.lbl_n7.Location = new System.Drawing.Point(465, 103);
+            this.lbl_n7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_n7.Name = "lbl_n7";
+            this.lbl_n7.Size = new System.Drawing.Size(187, 19);
+            this.lbl_n7.TabIndex = 14;
+            this.lbl_n7.Text = "INSERISCI UNA STRINGA";
+            // 
+            // txt_stringa2
+            // 
+            this.txt_stringa2.BackColor = System.Drawing.Color.LightGray;
+            this.txt_stringa2.Location = new System.Drawing.Point(469, 124);
+            this.txt_stringa2.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_stringa2.Name = "txt_stringa2";
+            this.txt_stringa2.Size = new System.Drawing.Size(129, 20);
+            this.txt_stringa2.TabIndex = 15;
+            // 
+            // lbl_n8
+            // 
+            this.lbl_n8.AutoSize = true;
+            this.lbl_n8.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_n8.ForeColor = System.Drawing.Color.DarkOrange;
+            this.lbl_n8.Location = new System.Drawing.Point(465, 154);
+            this.lbl_n8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_n8.Name = "lbl_n8";
+            this.lbl_n8.Size = new System.Drawing.Size(118, 19);
+            this.lbl_n8.TabIndex = 16;
+            this.lbl_n8.Text = "chiave stringa:";
+            // 
+            // txt_chiave3
+            // 
+            this.txt_chiave3.BackColor = System.Drawing.Color.LightGray;
+            this.txt_chiave3.Location = new System.Drawing.Point(469, 175);
+            this.txt_chiave3.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_chiave3.Name = "txt_chiave3";
+            this.txt_chiave3.Size = new System.Drawing.Size(86, 20);
+            this.txt_chiave3.TabIndex = 17;
+            // 
+            // btn_conferma3
+            // 
+            this.btn_conferma3.BackColor = System.Drawing.Color.GreenYellow;
+            this.btn_conferma3.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_conferma3.Location = new System.Drawing.Point(469, 209);
+            this.btn_conferma3.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_conferma3.Name = "btn_conferma3";
+            this.btn_conferma3.Size = new System.Drawing.Size(106, 26);
+            this.btn_conferma3.TabIndex = 18;
+            this.btn_conferma3.Text = "CONFERMA";
+            this.btn_conferma3.UseVisualStyleBackColor = false;
+            // 
+            // lbl_n9
+            // 
+            this.lbl_n9.AutoSize = true;
+            this.lbl_n9.Font = new System.Drawing.Font("MS UI Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_n9.Location = new System.Drawing.Point(466, 247);
+            this.lbl_n9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_n9.Name = "lbl_n9";
+            this.lbl_n9.Size = new System.Drawing.Size(77, 14);
+            this.lbl_n9.TabIndex = 19;
+            this.lbl_n9.Text = "Risultato: ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Khaki;
-            this.ClientSize = new System.Drawing.Size(651, 489);
+            this.ClientSize = new System.Drawing.Size(696, 489);
+            this.Controls.Add(this.lbl_n9);
+            this.Controls.Add(this.btn_conferma3);
+            this.Controls.Add(this.txt_chiave3);
+            this.Controls.Add(this.lbl_n8);
+            this.Controls.Add(this.txt_stringa2);
+            this.Controls.Add(this.lbl_n7);
             this.Controls.Add(this.lbl_titolo);
             this.Controls.Add(this.lbl_n6);
             this.Controls.Add(this.btn_conferma2);
@@ -242,6 +319,12 @@
         private System.Windows.Forms.Button btn_conferma2;
         private System.Windows.Forms.Label lbl_n6;
         private System.Windows.Forms.Label lbl_titolo;
+        private System.Windows.Forms.Label lbl_n7;
+        private System.Windows.Forms.TextBox txt_stringa2;
+        private System.Windows.Forms.Label lbl_n8;
+        private System.Windows.Forms.TextBox txt_chiave3;
+        private System.Windows.Forms.Button btn_conferma3;
+        private System.Windows.Forms.Label lbl_n9;
     }
 }
 
