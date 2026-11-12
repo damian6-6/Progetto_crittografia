@@ -48,6 +48,14 @@
             this.txt_chiave3 = new System.Windows.Forms.TextBox();
             this.btn_conferma3 = new System.Windows.Forms.Button();
             this.lbl_n9 = new System.Windows.Forms.Label();
+            this.txt_codice2 = new System.Windows.Forms.TextBox();
+            this.lbl_n10 = new System.Windows.Forms.Label();
+            this.txt_chiave4 = new System.Windows.Forms.TextBox();
+            this.lbl_n11 = new System.Windows.Forms.Label();
+            this.btn_conferma4 = new System.Windows.Forms.Button();
+            this.lbl_n12 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_n1
@@ -197,7 +205,7 @@
             this.lbl_titolo.AutoSize = true;
             this.lbl_titolo.Font = new System.Drawing.Font("Modern No. 20", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_titolo.ForeColor = System.Drawing.Color.DarkRed;
-            this.lbl_titolo.Location = new System.Drawing.Point(234, 29);
+            this.lbl_titolo.Location = new System.Drawing.Point(355, 29);
             this.lbl_titolo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_titolo.Name = "lbl_titolo";
             this.lbl_titolo.Size = new System.Drawing.Size(188, 36);
@@ -257,6 +265,7 @@
             this.btn_conferma3.TabIndex = 18;
             this.btn_conferma3.Text = "CONFERMA";
             this.btn_conferma3.UseVisualStyleBackColor = false;
+            this.btn_conferma3.Click += new System.EventHandler(this.btn_conferma3_Click);
             // 
             // lbl_n9
             // 
@@ -269,12 +278,94 @@
             this.lbl_n9.TabIndex = 19;
             this.lbl_n9.Text = "Risultato: ";
             // 
+            // txt_codice2
+            // 
+            this.txt_codice2.BackColor = System.Drawing.Color.LightGray;
+            this.txt_codice2.Location = new System.Drawing.Point(696, 125);
+            this.txt_codice2.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_codice2.Name = "txt_codice2";
+            this.txt_codice2.Size = new System.Drawing.Size(129, 20);
+            this.txt_codice2.TabIndex = 20;
+            // 
+            // lbl_n10
+            // 
+            this.lbl_n10.AutoSize = true;
+            this.lbl_n10.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_n10.ForeColor = System.Drawing.Color.DarkOrange;
+            this.lbl_n10.Location = new System.Drawing.Point(692, 104);
+            this.lbl_n10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_n10.Name = "lbl_n10";
+            this.lbl_n10.Size = new System.Drawing.Size(187, 19);
+            this.lbl_n10.TabIndex = 21;
+            this.lbl_n10.Text = "INSERISCI UNA STRINGA";
+            // 
+            // txt_chiave4
+            // 
+            this.txt_chiave4.BackColor = System.Drawing.Color.LightGray;
+            this.txt_chiave4.Location = new System.Drawing.Point(696, 175);
+            this.txt_chiave4.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_chiave4.Name = "txt_chiave4";
+            this.txt_chiave4.Size = new System.Drawing.Size(86, 20);
+            this.txt_chiave4.TabIndex = 22;
+            // 
+            // lbl_n11
+            // 
+            this.lbl_n11.AutoSize = true;
+            this.lbl_n11.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_n11.ForeColor = System.Drawing.Color.DarkOrange;
+            this.lbl_n11.Location = new System.Drawing.Point(692, 154);
+            this.lbl_n11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_n11.Name = "lbl_n11";
+            this.lbl_n11.Size = new System.Drawing.Size(118, 19);
+            this.lbl_n11.TabIndex = 23;
+            this.lbl_n11.Text = "chiave stringa:";
+            // 
+            // btn_conferma4
+            // 
+            this.btn_conferma4.BackColor = System.Drawing.Color.GreenYellow;
+            this.btn_conferma4.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_conferma4.Location = new System.Drawing.Point(696, 209);
+            this.btn_conferma4.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_conferma4.Name = "btn_conferma4";
+            this.btn_conferma4.Size = new System.Drawing.Size(106, 26);
+            this.btn_conferma4.TabIndex = 24;
+            this.btn_conferma4.Text = "CONFERMA";
+            this.btn_conferma4.UseVisualStyleBackColor = false;
+            this.btn_conferma4.Click += new System.EventHandler(this.btn_conferma4_Click);
+            // 
+            // lbl_n12
+            // 
+            this.lbl_n12.AutoSize = true;
+            this.lbl_n12.Font = new System.Drawing.Font("MS UI Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_n12.Location = new System.Drawing.Point(693, 247);
+            this.lbl_n12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_n12.Name = "lbl_n12";
+            this.lbl_n12.Size = new System.Drawing.Size(77, 14);
+            this.lbl_n12.TabIndex = 25;
+            this.lbl_n12.Text = "Risultato: ";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(263, 299);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 26;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Khaki;
-            this.ClientSize = new System.Drawing.Size(696, 489);
+            this.ClientSize = new System.Drawing.Size(902, 489);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.lbl_n12);
+            this.Controls.Add(this.btn_conferma4);
+            this.Controls.Add(this.lbl_n11);
+            this.Controls.Add(this.txt_chiave4);
+            this.Controls.Add(this.lbl_n10);
+            this.Controls.Add(this.txt_codice2);
             this.Controls.Add(this.lbl_n9);
             this.Controls.Add(this.btn_conferma3);
             this.Controls.Add(this.txt_chiave3);
@@ -298,6 +389,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -325,6 +417,13 @@
         private System.Windows.Forms.TextBox txt_chiave3;
         private System.Windows.Forms.Button btn_conferma3;
         private System.Windows.Forms.Label lbl_n9;
+        private System.Windows.Forms.TextBox txt_codice2;
+        private System.Windows.Forms.Label lbl_n10;
+        private System.Windows.Forms.TextBox txt_chiave4;
+        private System.Windows.Forms.Label lbl_n11;
+        private System.Windows.Forms.Button btn_conferma4;
+        private System.Windows.Forms.Label lbl_n12;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
