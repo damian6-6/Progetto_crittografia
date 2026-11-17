@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lbl_n1 = new System.Windows.Forms.Label();
             this.txt_stringa = new System.Windows.Forms.TextBox();
             this.lbl_n2 = new System.Windows.Forms.Label();
@@ -55,7 +56,9 @@
             this.btn_conferma4 = new System.Windows.Forms.Button();
             this.lbl_n12 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_n1
@@ -69,7 +72,6 @@
             this.lbl_n1.Size = new System.Drawing.Size(187, 19);
             this.lbl_n1.TabIndex = 0;
             this.lbl_n1.Text = "INSERISCI UNA STRINGA";
-            this.lbl_n1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txt_stringa
             // 
@@ -205,7 +207,7 @@
             this.lbl_titolo.AutoSize = true;
             this.lbl_titolo.Font = new System.Drawing.Font("Modern No. 20", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_titolo.ForeColor = System.Drawing.Color.DarkRed;
-            this.lbl_titolo.Location = new System.Drawing.Point(355, 29);
+            this.lbl_titolo.Location = new System.Drawing.Point(345, 16);
             this.lbl_titolo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_titolo.Name = "lbl_titolo";
             this.lbl_titolo.Size = new System.Drawing.Size(188, 36);
@@ -346,12 +348,24 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(263, 299);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(76, 287);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(346, 178);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(527, 287);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(283, 178);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 27;
+            this.pictureBox2.TabStop = false;
             // 
             // Form1
             // 
@@ -359,6 +373,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Khaki;
             this.ClientSize = new System.Drawing.Size(902, 489);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lbl_n12);
             this.Controls.Add(this.btn_conferma4);
@@ -390,6 +405,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -424,6 +440,7 @@
         private System.Windows.Forms.Button btn_conferma4;
         private System.Windows.Forms.Label lbl_n12;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
